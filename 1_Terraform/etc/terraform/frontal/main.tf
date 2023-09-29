@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "website_bucket" {
   }
 }
 
-resource "aws_cloudfront_distribution" "s3_distribution" {
+resource "aws_ cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = aws_s3_bucket.website_bucket.bucket_regional_domain_name
     origin_id   = "S3Origin"
